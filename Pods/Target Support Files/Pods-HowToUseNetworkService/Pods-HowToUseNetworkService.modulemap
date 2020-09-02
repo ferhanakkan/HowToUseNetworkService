@@ -1,0 +1,6 @@
+module Pods_HowToUseNetworkService {
+  umbrella header "Pods-HowToUseNetworkService-umbrella.h"
+
+  export *
+  module * { export * }
+}

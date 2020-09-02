@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let service = ViewControllerService()
 
     override func viewDidLoad() {
         super.viewDidLoad()

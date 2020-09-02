@@ -13,6 +13,9 @@
 		36B9578724FFB64D00DC66A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B9578524FFB64D00DC66A6 /* Main.storyboard */; };
 		36B9578B24FFB65200DC66A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B9578A24FFB65200DC66A6 /* Assets.xcassets */; };
 		36B9578E24FFB65200DC66A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B9578C24FFB65200DC66A6 /* LaunchScreen.storyboard */; };
+		36E836FF24FFB83B00E650A8 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E836FE24FFB83B00E650A8 /* CoreService.swift */; };
+		36E8370124FFB84E00E650A8 /* ViewControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8370024FFB84E00E650A8 /* ViewControllerService.swift */; };
+		464F35013797FEB2AFA4C3F0 /* libPods-HowToUseNetworkService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B3BA6B87749836AB10532 /* libPods-HowToUseNetworkService.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		36B9578A24FFB65200DC66A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36B9578D24FFB65200DC66A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36B9578F24FFB65200DC66A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E836FE24FFB83B00E650A8 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
+		36E8370024FFB84E00E650A8 /* ViewControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerService.swift; sourceTree = "<group>"; };
+		566B7679DA1078A85FAF6889 /* Pods-HowToUseNetworkService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowToUseNetworkService.debug.xcconfig"; path = "Target Support Files/Pods-HowToUseNetworkService/Pods-HowToUseNetworkService.debug.xcconfig"; sourceTree = "<group>"; };
+		B417CF8EBC80D14AFA883400 /* Pods-HowToUseNetworkService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowToUseNetworkService.release.xcconfig"; path = "Target Support Files/Pods-HowToUseNetworkService/Pods-HowToUseNetworkService.release.xcconfig"; sourceTree = "<group>"; };
+		F57B3BA6B87749836AB10532 /* libPods-HowToUseNetworkService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HowToUseNetworkService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464F35013797FEB2AFA4C3F0 /* libPods-HowToUseNetworkService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				36B9577E24FFB64C00DC66A6 /* HowToUseNetworkService */,
 				36B9577D24FFB64C00DC66A6 /* Products */,
+				726D4BFC17F5738A43D35B05 /* Pods */,
+				C545589152B0A2F18E0F3290 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +91,7 @@
 		36B9579624FFB67C00DC66A6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				36E8370024FFB84E00E650A8 /* ViewControllerService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -87,8 +99,27 @@
 		36B9579724FFB68300DC66A6 /* CoreService */ = {
 			isa = PBXGroup;
 			children = (
+				36E836FE24FFB83B00E650A8 /* CoreService.swift */,
 			);
 			path = CoreService;
+			sourceTree = "<group>";
+		};
+		726D4BFC17F5738A43D35B05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				566B7679DA1078A85FAF6889 /* Pods-HowToUseNetworkService.debug.xcconfig */,
+				B417CF8EBC80D14AFA883400 /* Pods-HowToUseNetworkService.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C545589152B0A2F18E0F3290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F57B3BA6B87749836AB10532 /* libPods-HowToUseNetworkService.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36B9579224FFB65200DC66A6 /* Build configuration list for PBXNativeTarget "HowToUseNetworkService" */;
 			buildPhases = (
+				2FFF07EA3651D4BD37A5EDA4 /* [CP] Check Pods Manifest.lock */,
 				36B9577824FFB64C00DC66A6 /* Sources */,
 				36B9577924FFB64C00DC66A6 /* Frameworks */,
 				36B9577A24FFB64C00DC66A6 /* Resources */,
@@ -156,13 +188,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FFF07EA3651D4BD37A5EDA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowToUseNetworkService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36B9577824FFB64C00DC66A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				36B9578424FFB64C00DC66A6 /* ViewController.swift in Sources */,
+				36E8370124FFB84E00E650A8 /* ViewControllerService.swift in Sources */,
 				36B9578024FFB64C00DC66A6 /* AppDelegate.swift in Sources */,
+				36E836FF24FFB83B00E650A8 /* CoreService.swift in Sources */,
 				36B9578224FFB64C00DC66A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +366,7 @@
 		};
 		36B9579324FFB65200DC66A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566B7679DA1078A85FAF6889 /* Pods-HowToUseNetworkService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +386,7 @@
 		};
 		36B9579424FFB65200DC66A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B417CF8EBC80D14AFA883400 /* Pods-HowToUseNetworkService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
