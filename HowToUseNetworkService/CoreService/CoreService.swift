@@ -10,7 +10,7 @@ import PromiseKit
 
 class CoreService {
     
-    private var baseApiUrl = Bundle.main.object(forInfoDictionaryKey: "ApiUrl") as! String
+    private var baseApiUrl = "http://localhost:8080/"
     private var endPoint: String = ""
     
     private let sessionManager: Session?
@@ -26,7 +26,7 @@ class CoreService {
         let userDefaults = UserDefaults.standard
         let headerLang = userDefaults.value(forKey: "langHeader") as? String ?? "en-US"
         
-        if let token: String = UserDefaults.standard.value(forKey: Constants.Api.token) as? String {
+        if let token: String = UserDefaults.standard.value(forKey: "token") as? String {
             
             return  ["Authorization": "Bearer \(token)",
                      "Content-Type" : "application/json",
@@ -80,7 +80,7 @@ class CoreService {
                                         print(title)
                                     }
                                 default:
-                                    print("Unexpected status")
+                                    print("")
                                 }
                             }
                             seal.reject(error)

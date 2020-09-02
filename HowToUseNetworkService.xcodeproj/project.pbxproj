@@ -15,6 +15,8 @@
 		36B9578E24FFB65200DC66A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B9578C24FFB65200DC66A6 /* LaunchScreen.storyboard */; };
 		36E836FF24FFB83B00E650A8 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E836FE24FFB83B00E650A8 /* CoreService.swift */; };
 		36E8370124FFB84E00E650A8 /* ViewControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8370024FFB84E00E650A8 /* ViewControllerService.swift */; };
+		36E8370424FFBA6800E650A8 /* Test Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8370324FFBA6800E650A8 /* Test Models.swift */; };
+		36E8370724FFBADC00E650A8 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8370624FFBADC00E650A8 /* Encodable.swift */; };
 		464F35013797FEB2AFA4C3F0 /* libPods-HowToUseNetworkService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B3BA6B87749836AB10532 /* libPods-HowToUseNetworkService.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		36B9578F24FFB65200DC66A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E836FE24FFB83B00E650A8 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
 		36E8370024FFB84E00E650A8 /* ViewControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerService.swift; sourceTree = "<group>"; };
+		36E8370324FFBA6800E650A8 /* Test Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test Models.swift"; sourceTree = "<group>"; };
+		36E8370624FFBADC00E650A8 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		566B7679DA1078A85FAF6889 /* Pods-HowToUseNetworkService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowToUseNetworkService.debug.xcconfig"; path = "Target Support Files/Pods-HowToUseNetworkService/Pods-HowToUseNetworkService.debug.xcconfig"; sourceTree = "<group>"; };
 		B417CF8EBC80D14AFA883400 /* Pods-HowToUseNetworkService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowToUseNetworkService.release.xcconfig"; path = "Target Support Files/Pods-HowToUseNetworkService/Pods-HowToUseNetworkService.release.xcconfig"; sourceTree = "<group>"; };
 		F57B3BA6B87749836AB10532 /* libPods-HowToUseNetworkService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HowToUseNetworkService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +71,8 @@
 		36B9577E24FFB64C00DC66A6 /* HowToUseNetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				36E8370524FFBACF00E650A8 /* Extension */,
+				36E8370224FFBA5A00E650A8 /* Models */,
 				36B9579724FFB68300DC66A6 /* CoreService */,
 				36B9579624FFB67C00DC66A6 /* Service */,
 				36B9579524FFB66E00DC66A6 /* Controllers */,
@@ -104,13 +110,28 @@
 			path = CoreService;
 			sourceTree = "<group>";
 		};
+		36E8370224FFBA5A00E650A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36E8370324FFBA6800E650A8 /* Test Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36E8370524FFBACF00E650A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				36E8370624FFBADC00E650A8 /* Encodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		726D4BFC17F5738A43D35B05 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				566B7679DA1078A85FAF6889 /* Pods-HowToUseNetworkService.debug.xcconfig */,
 				B417CF8EBC80D14AFA883400 /* Pods-HowToUseNetworkService.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -219,9 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B9578424FFB64C00DC66A6 /* ViewController.swift in Sources */,
+				36E8370724FFBADC00E650A8 /* Encodable.swift in Sources */,
 				36E8370124FFB84E00E650A8 /* ViewControllerService.swift in Sources */,
 				36B9578024FFB64C00DC66A6 /* AppDelegate.swift in Sources */,
 				36E836FF24FFB83B00E650A8 /* CoreService.swift in Sources */,
+				36E8370424FFBA6800E650A8 /* Test Models.swift in Sources */,
 				36B9578224FFB64C00DC66A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
